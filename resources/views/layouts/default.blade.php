@@ -9,9 +9,6 @@
       @include('includes.header')
     </div>
   </div>
-  <div class="">
-    @include('includes.slider')
-  </div>
   <div id="main" class="row">
     @yield('content')
   </div>
