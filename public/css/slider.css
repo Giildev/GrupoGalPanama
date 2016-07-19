@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+input[name="slider-select-element"] {
+    display: none;
+}
+#slider-arrows {
+    margin: 0 auto 0 auto;
+}
+#slider-box {
+    -moz-animation: autoSlider 25s infinite;
+    -o-animation: autoSlider 25s infinite;
+    -webkit-animation: autoSlider 25s infinite;
+    animation: autoSlider 25s infinite;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    height: 100%;
+    width: 300%;
+}
+#slider-container {
+    height: 20%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    height: 500px;
+}
+.element-blue, .element-green, .element-red {
+    min-height: 500px;
+    max-height: 100%;
+    width: 100%;
+}
+.element-blue {
+    /*background: blue;*/
+    background-image: url(images/bookie3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.element-green {
+    /*background: green;*/
+    background-image: url(images/bookie2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.element-red {
+    /*background: red;*/
+    background-image: url(images/bookie1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.slider-element {
+    float: left;
+    width: 33.333%;
+}
+@-moz-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,115 @@
+/*panama*/
+
+#panama {
+    width: 280px;
+    height: 400px;
+    float: left;
+    padding-right: 20px;
+}
+#mensaje1 {
+    width: 960px;
+    height: 100px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #153864;
+}
+.textosblancos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    text-align: justify;
+}
+#mensaje2 {
+    width: 960px;
+    height: 160px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mensaje3 {
+    width: 960px;
+    height: 450px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mensaje4 {
+    width: 960px;
+    height: 2200px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contenidopanama {
+    width: 960px;
+    height: 4400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*index*/
+
+#iconosindex {
+    width: 192px;
+    height: 170px;
+    float: left;
+    padding-top: 10px;
+}
+
+/*etapas*/
+
+#tituloetapas {
+    width: 960px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#etapastxt {
+    width: 960px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#etapastxt2 {
+    width: 960px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contenidoetapas {
+    width: 960px;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*PH TOWN*/
+
+#contenidotown {
+    width: 960px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulosblancos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+#sociocontenido {
+    width: 960px;
+    min-height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contactocontenido {
+    width: 960px;
+    min-height: 690px;
+    margin-left: auto;
+    margin-right: auto;
+}
