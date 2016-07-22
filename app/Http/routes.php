@@ -23,3 +23,15 @@ Route::get('/desarrollo', function () {
 Route::get('/contact', function () {
   return View::make('pages.contact');
 });
+Route::get('/etapasdenegocio', function () {
+  return View::make('pages.etapasdenegocio');
+});
+Route::get('/atencion', function () {
+  return View::make('pages.atencion');
+});
+Route::get('/ubicacion', function () {
+  return View::make('pages.ubicacion');
+});
+Route::get('/panama', function () {
+  return View::make('pages.panama');
+});

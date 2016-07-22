@@ -30,25 +30,25 @@
       </div>
       <div id="iconosindex">
         <center>
-          <a href="../etapasnegocio.php"><img src="{{asset('img/icono1.png')}}" width="130" height="130" alt="experiencecargo" /></a><br />
+          <a href="/etapasdenegocio"><img src="{{asset('img/icono1.png')}}" width="130" height="130" alt="experiencecargo" /></a><br />
           <span class="textosa">Etapas del modelo de Negocio</span>
         </center>
       </div>
       <div id="iconosindex">
         <center>
-          <a href="../atencion.php"><img src="{{asset('img/icono2.png')}}" width="130" height="130" alt="globalcargo" /></a><br />
+          <a href="/atencion"><img src="{{asset('img/icono2.png')}}" width="130" height="130" alt="globalcargo" /></a><br />
           <span class="textosa">Atención Personalizada</span>
         </center>
       </div>
       <div id="iconosindex">
         <center>
-          <a href="../ubicacion.php"><img src="{{asset('img/icono3.png')}}" width="130" height="130" alt="consultingcargo" /></a><br />
+          <a href="/ubicacion"><img src="{{asset('img/icono3.png')}}" width="130" height="130" alt="consultingcargo" /></a><br />
           <span class="textosa">Ubicación de los proyectos</span>
         </center>
       </div>
       <div id="iconosindex">
         <center>
-          <a href="../panama.php"><img src="{{asset('img/icono4.png')}}" width="130" height="130" alt="consultingcargo" /></a><br />
+          <a href="/panama"><img src="{{asset('img/icono4.png')}}" width="130" height="130" alt="consultingcargo" /></a><br />
           <span class="textosa">Inversión Asegurada en Panamá</span>
         </center>
       </div>

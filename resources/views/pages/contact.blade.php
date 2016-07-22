@@ -11,7 +11,7 @@
 
 
      <div id="formulario">
-      <form action="../form.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+      <form action="#" method="post" enctype="multipart/form-data" name="form1" id="form1">
         <table width="500" border="0">
           <tr>
             <td height="51" colspan="2" class="tituloform">Consulte con nosotros cualquier duda:</td>

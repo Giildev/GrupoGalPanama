@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
-  <div id="contenido">
+  <div id="contenido" style="background-image: url({{asset('img/aboutBackground.jpg')}})">
     <div class="titulo1" id="textonosotros">
       <p><span class="titulo2">Acerca </span><span class="titulo3">de Nosotros</span><br />
         <br />
@@ -18,20 +18,20 @@
   </div>
 
   <div id="contenidotxt">
-      <div id="trom"><img src="../images/trom.png" width="300" height="144" alt="trom" /><br />
+      <div id="trom"><img src="{{asset('img/trom.png')}}" width="300" height="144" alt="trom" /><br />
         <span class="textourl">www.grupotrom.com</span></div>
       <div id="tromtxt">
         <p class="textos">TROM  es una sólida organización que se mantiene inalterable ante los distintos  factores políticos, económicos y sociales garantizando su calidad de construcción  y servicio. <br />
           De  hecho, TROM es una empresa venezolana dedicada al Proyecto, Promoción,  Construcción y venta de desarrollos inmobiliarios desde 1964. Son muchos años  de eficiencia en desarrollos urbanísticos que han permitido construir hasta  1.200 viviendas por año, gracias a la formación de toda una infraestructura  operativa, preparada y entrenada para satisfacer exitosamente las necesidades y  requerimientos del mercado. </p>
   <p class="textos"><br />
         <br />
-        <a href="../trom.php"><img src="../images/vermas.png" width="89" height="26" alt="trom" /></a><br />
+        <a href="/trom"><img src="{{asset('img/vermasBtn.png')}}" width="89" height="26" alt="trom" /></a><br />
         </p>
       </div>
 
       <div id="rical">
         <center>
-          <p><img src="../images/rical_logo.jpg" width="229" height="229" alt="rical" /></p>
+          <p><img src="{{asset('img/rical.jpg')}}" width="229" height="229" alt="rical" style="z-index:1" /></p>
           <p class="textourl">www.gruporical.com</p>
         </center>
       </div>
@@ -42,10 +42,8 @@
           Grupo Rical ha sido a lo largo del tiempo, una  compañía innovadora y a la vanguardia en el desarrollo de proyectos de vivienda  para satisfacer las necesidades de nuestros clientes, estableciendo con éxito  los diferentes proyectos que se han realizado por cuenta del grupo </p>
   <p class="textos"><br />
         <br />
-        <a href="../rical.php"><img src="../images/vermas.png" width="90" height="27" alt="rical" /></a></p>
+        <a href="/rical"><img src="{{asset('img/vermasBtn.png')}}" width="90" height="27" alt="rical" /></a></p>
       </div>
-
-      <div class="titulo4" id="asociados">ASOCIADOS</div>
 
 
       <div id="asociadostxt">
@@ -53,7 +51,7 @@
         <p class="textos">Contamos con un calificado grupo de Profesionales en las distintas  áreas de servicios relacionados con la Construcción y Bienes Raíces, Ingeniería  y Arquitectura, Aspectos legales e Inversores Asociados a nuestro Modelo de  Negocio.</p>
   <p class="textos"><br />
         <br />
-        <a href="../asociados.php"><img src="../images/vermas.png" width="90" height="27" alt="asociados" /></a><br />
+        <a href="/asociados"><img src="{{asset('img/vermasBtn.png')}}" width="90" height="27" alt="asociados" /></a><br />
         <br />
         </p>
       </div>

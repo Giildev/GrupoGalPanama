@@ -150,7 +150,7 @@ body {
     height: 600px;
     padding-top: 40px;
     background-attachment: fixed;
-    background-image: url(images/foto_nosotros.jpg);
+    /*background-image: url(public/img/aboutBackground.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -175,7 +175,8 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 26px;
     color: #00264e;
-    text-align: left;
+    text-align: center;
+    margin-top: 4%;
 }
 .titulo4 {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -223,11 +224,13 @@ body {
     float: left;
 }
 #rical {
+    margin-top: 10%;
     width: 300px;
     height: 300px;
     float: left;
 }
 #ricaltxt {
+    margin-top: 8%;
     width: 620px;
     height: 220px;
     float: left;
@@ -242,6 +245,7 @@ body {
     padding-top: 120px;
 }
 #asociadostxt {
+    margin-top: 10%;
     width: 620px;
     height: 170px;
     float: left;
