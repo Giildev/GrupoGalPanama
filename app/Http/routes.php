@@ -35,3 +35,12 @@ Route::get('/ubicacion', function () {
 Route::get('/panama', function () {
   return View::make('pages.panama');
 });
+Route::get('/trom', function () {
+  return View::make('pages.trom');
+});
+Route::get('/rical', function () {
+  return View::make('pages.rical');
+});
+Route::get('/asociados', function () {
+  return View::make('pages.asociados');
+});
