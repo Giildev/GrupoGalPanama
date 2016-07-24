@@ -2,7 +2,7 @@
 @section('content')
   <div id="contenidopanama">
 
-      <div id="trom2"><img src="../images/banderapanama.png" width="228" height="151" alt="panama" /><br />
+      <div id="trom2"><img src="{{asset('img/banderapanama.png')}}" width="228" height="151" alt="panama" /><br />
       </div>
       <div id="tromtxt2">
         <p class="textos"><span class="titulo1">¿ Por qué invertir en Panamá?</span><br />

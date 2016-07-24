@@ -108,9 +108,11 @@
 #wowslider-container1 .ws_bullets a {
     line-height: 0;
 }
-#wowslider-container1 .ws_script {
+
+/*#wowslider-container1 .ws_script {
     display: none;
-}
+}*/
+
 #wowslider-container1 sound, #wowslider-container1 object {
     position: absolute;
 }
@@ -373,7 +375,8 @@
         left: -200%
     }
 }
-#wowslider-container1 .ws_shadow {
+
+/*#wowslider-container1 .ws_shadow {
     background-image: url(./bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -383,7 +386,8 @@
     top: -1.06%;
     width: 100.83%;
     height: 109.36%;
-}
+}*/
+
 * html #wowslider-container1 .ws_shadow {
     /*ie6*/
     background: none;

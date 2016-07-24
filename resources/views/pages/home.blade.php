@@ -5,7 +5,7 @@
   <div class="ws_images">
     <ul>
   		<li><img src="{{asset('img/bookie1.jpg')}}" alt="" title="" id="wows1_0"/></li>
-  		<li><a href="http://wowslider.com"><img src="{{asset('img/bookie3.jpg')}}" alt="http://wowslider.com/" title="" id="wows1_1"/></a></li>
+  		<li><img src="{{asset('img/bookie3.jpg')}}" alt="" title="" id="wows1_1"/></a></li>
   		<li><img src="{{asset('img/bookie2.jpg')}}" alt="" title="" id="wows1_2"/></li>
 	   </ul>
    </div>
@@ -16,8 +16,6 @@
     <a href="#" title=""><span><img src="{{asset('slider/data1/tooltips/bookie2.jpg')}}" alt=""/>2</span></a>
 	</div>
   </div>
-  <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
-  <div class="ws_shadow"></div>
 </div>
   <script type="text/javascript" src="{{asset('slider/engine1/wowslider.js')}}"></script>
   <script type="text/javascript" src="{{asset('slider/engine1/script.js')}}"></script>
