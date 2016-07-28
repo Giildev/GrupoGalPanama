@@ -1,0 +1,12 @@
+{
+    "transport": "ftp",
+    "hostname": "ftp.grupogalpanama.com",
+    "port": 21,
+    "username": "ftpgalvenezuela@grupogalpanama.com",
+    "target": "/public_html/",
+    "password": "Q?c=$TI3!GgN",
+    "ignore": [
+        ".remote-sync.json",
+        ".git/**"
+    ]
+}
