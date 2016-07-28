@@ -4,7 +4,32 @@
   </a>
 </div>
   <div id="login">
-    <a href="#" data-toggle="modal" data-target="#modalLogin"><img src="{{asset('img/loginBtn.png')}}" width="222" height="30" alt="login" /></a>
+    @if (Auth::guest())
+      <a href="/login">
+        <p>
+          <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-log-in"></span>   Iniciar Sesión
+          </button>
+        </p>
+      </a>
+    @else
+      <a href="/logout">
+        <p>
+          <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-log-out"></span> Cerrar Sesión
+          </button>
+        </p>
+      </a>
+      @if(Auth::user()->rol == '1')
+        <a href="/register">
+          <p>
+            <button type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-user"></span> Registrar Nuevo Usuario
+            </button>
+          </p>
+        </a>
+      @endif
+    @endif
   </div>
   <div id="menu">
     <table width="580" height="34" align="right">

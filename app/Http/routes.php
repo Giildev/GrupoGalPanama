@@ -47,3 +47,7 @@ Route::get('/rical', function () {
 Route::get('/asociados', function () {
   return View::make('pages.asociados');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
