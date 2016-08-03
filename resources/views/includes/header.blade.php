@@ -13,22 +13,21 @@
         </p>
       </a>
     @else
-      <a href="/logout">
-        <p>
-          <button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-log-out"></span> Cerrar Sesión
-          </button>
-        </p>
-      </a>
-      @if(Auth::user()->rol == '1')
-        <a href="/register">
-          <p>
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-user"></span> Registrar Nuevo Usuario
-            </button>
-          </p>
-        </a>
-      @endif
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}}<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            @if(Auth::user()->rol == '1')
+              <li><a href="/register">Registrar Nuevo Usuario</a></li>
+              <li><a href="/ph">PH</a></li>
+              <li class="divider"></li>
+              <li><a href="/logout">Cerrar Sesión</a></li>
+            @else
+              <li><a href="/logout">Cerrar Sesión</a></li>
+            @endif
+          </ul>
+        </li>
+      </ul>
     @endif
   </div>
   <div id="menu">

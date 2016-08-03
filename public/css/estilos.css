@@ -741,7 +741,7 @@ body {
     /* Set width of the dropdown */
     color: white;
     display: none;
-    background-color: rgba(100, 100, 100, 0.9);
+    /*background-color: rgba(100, 100, 100, 0.9);*/
     position: relative;
     /*z-index: 999;*/
 }
@@ -1141,4 +1141,14 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
+}
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
 }
