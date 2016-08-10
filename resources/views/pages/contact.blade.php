@@ -1,5 +1,8 @@
 @extends('layouts.default')
 @section('content')
+  <div id="imagencontacto">
+    <img src="{{asset('img/contacto_foto.jpg')}}" width="960" height="200" alt="contacto" />
+  </div>
   <div id="contactocontenido">
   <div id="direccion">
   <p><span class="titulo1">Dirección:</span><br />

@@ -49,5 +49,6 @@ Route::get('/asociados', function () {
 });
 
 Route::auth();
-
 Route::get('/home', 'HomeController@index');
+
+Route::resource('ph', 'PhController');

@@ -16,6 +16,7 @@ class PhController extends Controller
     public function index()
     {
         //
+        return view('ph.show');
     }
 
     /**
@@ -26,6 +27,7 @@ class PhController extends Controller
     public function create()
     {
         //
+        return view('ph.create');
     }
 
     /**
@@ -36,7 +38,21 @@ class PhController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validate
+          $this->validate($request, array(
+            'name' => 'required|max:255',
+            'address' => 'required|max:255',
+          ));
+        //store
+          $ph = new Post;
+
+          $ph->name = $request->name;
+          $ph->address = $request->address;
+          $ph->save();
+
+        // redirect
+
+        return redirect()->route('ph.show');
     }
 
     /**

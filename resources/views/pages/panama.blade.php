@@ -31,7 +31,7 @@
       9. (empate) México - 35.6 </p>
   </div>
   <div id="vistasslider">
-    <img src="../images/mapa.JPG" width="631" height="364" alt="mapa" /> </div>
+    <img src="../img/mapa.JPG" width="631" height="364" alt="mapa" /> </div>
 
     <div class="textos" id="mensaje1">
       <br />
@@ -49,22 +49,22 @@
     </div>
 
     <div id="mensaje3">
-    <center><img src="../images/economiamap.jpg" width="900" height="442" alt="economiamapa" /></center> </div>
+    <center><img src="../img/economiamap.jpg" width="900" height="442" alt="economiamapa" /></center> </div>
 
     <div class="textos" id="mensaje4">
       <p>La inversión extranjera directa (IED) sigue ingresando a buen ritmo rompiendo un récord histórico en el 2014.</p>
-      <p><center><img src="../images/economiamapa2.jpg" width="800" height="316" alt="economia" /></center></p>
+      <p><center><img src="../img/economiamapa2.jpg" width="800" height="316" alt="economia" /></center></p>
       <p>La economía  presenta fortalezas en cuanto a estabilidad macroeconómica e infraestructura,  estos son algunos de los factores que han impulsado fuertemente la atracción de  inversión extranjera. </p>
       <p>&nbsp;</p>
       <p>Panamá no solo se ha desempeñado mejor que la región, su  crecimiento también ha sido superior al de las economías avanzadas  y casi el doble del crecimiento mundial.</p>
-      <p><center><img src="../images/mapaeconomia3.jpg" width="821" height="414" alt="economia3" /></center></p>
+      <p><center><img src="../img/mapaeconomia3.jpg" width="821" height="414" alt="economia3" /></center></p>
       <p>&nbsp;</p>
       <p>La pobreza ha disminuido considerablemente en los últimos 5  años. Mantenemos tasas de pleno empleo y la inflación disminuyó por debajo del  3%.</p>
-      <p><center><img src="../images/economiamapa3.jpg" width="780" height="399" alt="econmia" /></center></p>
+      <p><center><img src="../img/economiamapa3.jpg" width="780" height="399" alt="econmia" /></center></p>
       <p>&nbsp;</p>
       <p><span class="titulo1">Estimación del déficit habitacional en Panamá </span></p>
       <p><center>
-        <p><img src="../images/habitacional.jpg" width="934" height="530" /></p>
+        <p><img src="../img/habitacional.jpg" width="934" height="530" /></p>
         <p>&nbsp;</p>
 
       <div id="mensaje5">
@@ -78,17 +78,17 @@
             <div style="position:absolute;display:block;background:url('../img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
           </div>
           <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1000px; height: 900px; overflow: hidden;">
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp1.jpg" /> <img data-u="thumb" src="../images/imagent1.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp2.jpg" /> <img data-u="thumb" src="../images/imagent2.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp3.jpg" /> <img data-u="thumb" src="../images/imagent3.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp4.jpg" /> <img data-u="thumb" src="../images/imagent4.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp5.jpg" /> <img data-u="thumb" src="../images/imagent5.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp6.jpg" /> <img data-u="thumb" src="../images/imagent6.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp7.jpg" /> <img data-u="thumb" src="../images/imagent7.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp8.jpg" /> <img data-u="thumb" src="../images/imagent8.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp9.jpg" /> <img data-u="thumb" src="../images/imagent9.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp10.jpg" /> <img data-u="thumb" src="../images/imagent10.jpg" /> </div>
-            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../images/imagenp11.jpg" /> <img data-u="thumb" src="../images/imagent11.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp1.jpg" /> <img data-u="thumb" src="../img/imagent1.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp2.jpg" /> <img data-u="thumb" src="../img/imagent2.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp3.jpg" /> <img data-u="thumb" src="../img/imagent3.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp4.jpg" /> <img data-u="thumb" src="../img/imagent4.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp5.jpg" /> <img data-u="thumb" src="../img/imagent5.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp6.jpg" /> <img data-u="thumb" src="../img/imagent6.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp7.jpg" /> <img data-u="thumb" src="../img/imagent7.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp8.jpg" /> <img data-u="thumb" src="../img/imagent8.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp9.jpg" /> <img data-u="thumb" src="../img/imagent9.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp10.jpg" /> <img data-u="thumb" src="../img/imagent10.jpg" /> </div>
+            <div data-p="144.50" style="display: none;"> <img data-u="image" src="../img/imagenp11.jpg" /> <img data-u="thumb" src="../img/imagent11.jpg" /> </div>
           </div>
           <!-- Thumbnail Navigator -->
           <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">

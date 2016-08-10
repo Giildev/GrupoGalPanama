@@ -65,6 +65,7 @@ body {
 #main {
     margin-top: 60px;
     width: 100%;
+    min-height: 720px;
 }
 #advantanges {
     width: 100%;
@@ -539,7 +540,7 @@ body {
     width: 300px;
     height: 180px;
     float: left;
-    padding-top: 80px;
+    padding-top: 45px;
 }
 #vistas {
     width: 300px;
@@ -1151,4 +1152,23 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     display: inline-block;
     margin-left: 2px;
     vertical-align: middle;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
 }
