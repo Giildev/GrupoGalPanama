@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+use App\Ph;
 
 class PhController extends Controller
 {
@@ -15,8 +18,8 @@ class PhController extends Controller
      */
     public function index()
     {
-        //
-        return view('ph.show');
+      $phs = Ph::all();
+      return view('ph.show')->withPhs($phs);
     }
 
     /**
@@ -44,15 +47,25 @@ class PhController extends Controller
             'address' => 'required|max:255',
           ));
         //store
-          $ph = new Post;
-
+          $ph = new Ph;
           $ph->name = $request->name;
           $ph->address = $request->address;
+          $ph->googlemaplink = $request->googlemaplink;
+          $ph->gmap = $request->gmap;
+          $ph->plano1 = $request->plano1;
+          $ph->plano2 = $request->plano2;
+          $ph->plano3 = $request->plano3;
+          $ph->foto1 = $request->foto1;
+          $ph->foto2 = $request->foto2;
+          $ph->foto3 = $request->foto3;
+          $ph->memoria = $request->memoria;
+          $ph->estado = $request->estado;
+          $ph->ventas = $request->ventas;
           $ph->save();
 
         // redirect
 
-        return redirect()->route('ph.show');
+        return redirect()->route('ph.index');
     }
 
     /**

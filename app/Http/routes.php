@@ -1,5 +1,7 @@
 <?php
 
+use App\Ph;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -21,7 +23,8 @@ Route::get('/about', function () {
   return View::make('pages.about');
 });
 Route::get('/desarrollo', function () {
-  return View::make('pages.desarrollo');
+  $phs = Ph::all();
+  return view('ph.show')->withPhs($phs);
 });
 Route::get('/contact', function () {
   return View::make('pages.contact');
