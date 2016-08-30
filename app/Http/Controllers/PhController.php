@@ -8,6 +8,10 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Ph;
+use Input;
+use Validator;
+use Redirect;
+use Session;
 
 class PhController extends Controller
 {
@@ -19,7 +23,7 @@ class PhController extends Controller
     public function index()
     {
       $phs = Ph::all();
-      return view('ph.show')->withPhs($phs);
+      return view('ph.index')->withPhs($phs);
     }
 
     /**
@@ -77,6 +81,8 @@ class PhController extends Controller
     public function show($id)
     {
         //
+        $ph = Ph::find($id);
+        return view('ph.show')->withPh($ph);
     }
 
     /**
@@ -87,7 +93,8 @@ class PhController extends Controller
      */
     public function edit($id)
     {
-        //
+        $ph = Ph::find($id);
+        return view('ph.edit')->withPh($ph);
     }
 
     /**
@@ -111,5 +118,35 @@ class PhController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function upload() {
+      // getting all of the post data
+      $file = array('image' => Input::file('gmap'));
+      // setting up rules
+      $rules = array('image' => 'required',); //mimes:jpeg,bmp,png and for max size max:10000
+      // doing the validation, passing post data, rules and the messages
+      $validator = Validator::make($file, $rules);
+      if ($validator->fails()) {
+        // send back to the page with the input data and errors
+        return Redirect::to('/ph')->withInput()->withErrors($validator);
+      }
+      else {
+        // checking file is valid.
+        if (Input::file('image')->isValid()) {
+          $destinationPath = 'public\img\ph'; // upload path
+          $extension = Input::file('image')->getClientOriginalExtension(); // getting image extension
+          $fileName = rand(11111,99999).'.'.$extension; // renameing image
+          Input::file('image')->move($destinationPath, $fileName); // uploading file to given path
+          // sending back with message
+          Session::flash('success', 'Upload successfully');
+          return Redirect::to('/ph');
+        }
+        else {
+          // sending back with error message.
+          Session::flash('error', 'uploaded file is not valid');
+          return Redirect::to('/ph');
+        }
+      }
     }
 }

@@ -24,7 +24,7 @@ Route::get('/about', function () {
 });
 Route::get('/desarrollo', function () {
   $phs = Ph::all();
-  return view('ph.show')->withPhs($phs);
+  return view('pages.desarrollo')->withPhs($phs);
 });
 Route::get('/contact', function () {
   return View::make('pages.contact');
@@ -50,6 +50,8 @@ Route::get('/rical', function () {
 Route::get('/asociados', function () {
   return View::make('pages.asociados');
 });
+
+Route::post('/ph', 'PhController@upload');
 
 Route::auth();
 Route::get('/home', 'HomeController@index');
