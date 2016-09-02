@@ -7,7 +7,7 @@
               <div class="panel panel-default">
                   <div class="panel-heading">Editar {{ $ph->name }}</div>
                   <div class="panel-body">
-                      {!! Form::open(array('url'=>'/ph','method'=>'POST', 'files'=>true)) !!}
+                      {!! Form::model($ph, ['route' => ['ph.update', $ph->id], 'method' => 'PUT']) !!}
                           {{ csrf_field() }}
                           <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                               <label for="name" class="col-md-4 control-label">Nombre</label>
@@ -178,6 +178,10 @@
                   </div>
               </div>
           </div>
+
+          {!! Form::open(['route'=>['ph.destroy', $ph->id], 'method' => 'delete']) !!}
+          {!! Form::submit('Eliminar', ['class' => 'btn btn-danger']) !!}
+          {!! Form::close() !!}
       </div>
   </div>
 

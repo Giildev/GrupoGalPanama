@@ -51,6 +51,28 @@ Route::get('/asociados', function () {
   return View::make('pages.asociados');
 });
 
+Route::get('ph/{id}/informe', function ($id) {
+  $ph = Ph::find($id);
+  return view('ph.informe')->withph($ph);
+});
+
+Route::get('ph/{id}/informe/etapas', function ($id) {
+  $ph = Ph::find($id);
+  return view('ph.etapa')->withph($ph);
+});
+Route::get('ph/{id}/informe/memoria', function ($id) {
+  $ph = Ph::find($id);
+  return view('ph.memoria')->withph($ph);
+});
+Route::get('ph/{id}/informe/estado', function ($id) {
+  $ph = Ph::find($id);
+  return view('ph.estado')->withph($ph);
+});
+Route::get('ph/{id}/informe/ventas', function ($id) {
+  $ph = Ph::find($id);
+  return view('ph.ventas')->withph($ph);
+});
+
 Route::post('/ph', 'PhController@upload');
 
 Route::auth();

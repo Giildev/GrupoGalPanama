@@ -24,16 +24,16 @@
   						<td align='center' valign='middle' bgcolor='#133779'><p class='titulosblancos'>Fotos del desarrollo</p></td>
   					</tr>
   					<tr>
-  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/ph/$ph->foto1")}}';" /></a></td>
-  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/ph/$ph->foto1")}}';" /></a></td>
+  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" /></a></td>
+  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" /></a></td>
   					</tr>
   					<tr>
-  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/ph/$ph->foto1")}}';" /></a></td>
-  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/ph/$ph->foto1")}}';" /></a></td>
+  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" /></a></td>
+  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" /></a></td>
   					</tr>
   					<tr>
-  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/ph/$ph->foto1")}}';" /></a></td>
-  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/ph/$ph->foto1")}}';" /></a></td>
+  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" /></a></td>
+  						<td align='center'><a href='{{asset("img/ph/$ph->foto1")}}' target='_blank'><img src='{{asset("img/ph/$ph->foto1")}}' width='250' height='150' onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" /></a></td>
   					</tr>
   				</table>
   				<p class='tituloform'>&nbsp;</p>

@@ -106,7 +106,55 @@ class PhController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $this->validate($request, array(
+        'name' => 'max:255',
+        'address' => 'max:255',
+      ));
+
+      $phedit = Ph::find($id);
+      if (!empty($request->input('name'))) {
+        $phedit->name = $request->input('name');
+      }
+      if (!empty($request->input('address'))) {
+        $phedit->address = $request->input('address');
+      }
+      if (!empty($request->googlemaplink)) {
+        $phedit->googlemaplink = $request->googlemaplink;
+      }
+      if (!empty($request->gmap)) {
+        $phedit->gmap = $request->gmap;
+      }
+      if (!empty($request->plano1)) {
+        $phedit->plano1 = $request->plano1;
+      }
+      if (!empty($request->plano2)) {
+        $phedit->plano2 = $request->plano2;
+      }
+      if (!empty($request->plano3)) {
+        $phedit->plano3 = $request->plano3;
+      }
+      if (!empty($request->foto1)) {
+        $phedit->foto1 = $request->foto1;
+      }
+      if (!empty($request->foto2)) {
+        $phedit->foto2 = $request->foto2;
+      }
+      if (!empty($request->foto3)) {
+        $phedit->foto3 = $request->foto3;
+      }
+      if (!empty($request->memoria)) {
+        $phedit->memoria = $request->memoria;
+      }
+      if (!empty($request->estado)) {
+        $phedit->estado = $request->estado;
+      }
+      if (!empty($request->ventas)) {
+        $phedit->ventas = $request->ventas;
+      }
+
+      $phedit->save();
+
+      return redirect()->route('ph.index');
     }
 
     /**
@@ -117,36 +165,13 @@ class PhController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $phdelete = Ph::find($id);
+
+        $phdelete->delete();
+
+        return redirect()->route('ph.index');
     }
 
-    public function upload() {
-      // getting all of the post data
-      $file = array('image' => Input::file('gmap'));
-      // setting up rules
-      $rules = array('image' => 'required',); //mimes:jpeg,bmp,png and for max size max:10000
-      // doing the validation, passing post data, rules and the messages
-      $validator = Validator::make($file, $rules);
-      if ($validator->fails()) {
-        // send back to the page with the input data and errors
-        return Redirect::to('/ph')->withInput()->withErrors($validator);
-      }
-      else {
-        // checking file is valid.
-        if (Input::file('image')->isValid()) {
-          $destinationPath = 'public\img\ph'; // upload path
-          $extension = Input::file('image')->getClientOriginalExtension(); // getting image extension
-          $fileName = rand(11111,99999).'.'.$extension; // renameing image
-          Input::file('image')->move($destinationPath, $fileName); // uploading file to given path
-          // sending back with message
-          Session::flash('success', 'Upload successfully');
-          return Redirect::to('/ph');
-        }
-        else {
-          // sending back with error message.
-          Session::flash('error', 'uploaded file is not valid');
-          return Redirect::to('/ph');
-        }
-      }
-    }
+    public function uploadFile()
+    {}
 }

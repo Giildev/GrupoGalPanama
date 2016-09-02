@@ -15,7 +15,8 @@
                   <button type="button" class="btn btn-primary"><a style="color: inherit;" href="{{"ph/$value->id/edit"}}">Editar</a></button>
               </td>
               <td>
-                  <button type="button" class="btn btn-danger"><a style="color: inherit;" href="{{"ph/$value->id/delete"}}">Eliminar</a></button>
+                {{-- {!! Form::open(array('url'=>'/ph','method'=>'POST', 'files'=>true)) !!} --}}
+
               </td>
             </tr>
           @endforeach

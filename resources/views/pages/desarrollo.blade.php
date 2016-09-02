@@ -8,7 +8,7 @@
     @foreach($phs as $ph)
       <div class="col-md-3">
         <a href="{{"ph/$ph->id"}}">
-          <div class='phtitulos' id='donwaldofoto'><img src="{{asset("img/ph/$ph->foto1")}}" width='220' height='100' alt='donwaldo' /></div>
+          <div class='phtitulos' id='donwaldofoto'><img src="{{asset("img/ph/$ph->foto1")}}" onerror="if (this.src != 'error.jpg') this.src = '{{asset("img/FALTANTE.jpg")}}';" width='220' height='100' alt='donwaldo' /></div>
           <div class='phtitulos' id='donwaldonnombre'>{{ $ph->name }}</div>
         </a>
       </div>
